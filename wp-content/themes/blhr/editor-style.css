@@ -1,0 +1,9 @@
+@import url('http://fonts.googleapis.com/css?family=Exo:400,500,600,700');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700');
+@import url('css/boilerplate.css');
+@import url('css/bootstrap.min.css');
+@import url('css/font-awesome.min.css');
+@import url('css/kgk.css');
+
+body {width:auto;}
+.content {background:transparent;}

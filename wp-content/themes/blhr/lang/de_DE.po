@@ -1,0 +1,797 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BIC Bootstrap WP Theme v0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-07-21 11:35+0100\n"
+"Last-Translator: nina-taberski <nina.taberski@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"Language: de_DE\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# @ bicbswp
+#: archive.php:48
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "Tägliche Archive: %s"
+
+# @ bicbswp
+#: archive.php:51
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "Monatliche Archive: %s"
+
+# @ bicbswp
+#: archive.php:51
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+# @ bicbswp
+#: archive.php:55
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "Jährliche Archive: %s"
+
+# @ bicbswp
+#: archive.php:55
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+# @ bicbswp
+#: archive.php:58
+#, php-format
+msgid "Tag Archives: %s"
+msgstr "Schlagwort: %s"
+
+# @ bicbswp
+#: archive.php:68
+#, php-format
+msgid "Category Archives: %s"
+msgstr "Kategorie: %s"
+
+# @ bicbswp
+#: archive.php:78
+msgid "Blog Archives"
+msgstr "Blog Archiv"
+
+# @ bicbswp
+#: functions.php:43
+msgid "Main Menu"
+msgstr "Hauptmenü"
+
+# @ bicbswp
+#: functions.php:48
+msgid "Footer Menu"
+msgstr "Footer Menü"
+
+# @ bicbswp
+#: functions.php:130
+msgid "Page Sidebar"
+msgstr "Seiten Sidebar"
+
+# @ bicbswp
+#: functions.php:154
+msgid "Home Left"
+msgstr "Startseite Links"
+
+# @ bicbswp
+#: functions.php:156
+msgid "Left textbox on homepage"
+msgstr "Linke Textbox auf der Startseite"
+
+# @ bicbswp
+#: functions.php:166
+msgid "Home Middle"
+msgstr "Startseite Mitte"
+
+# @ bicbswp
+#: functions.php:168
+msgid "Middle textbox on homepage"
+msgstr "Mittlere Textbox auf der Startseite"
+
+# @ bicbswp
+#: functions.php:178
+msgid "Home Right"
+msgstr "Startseite Rechts"
+
+# @ bicbswp
+#: functions.php:180
+msgid "Right textbox on homepage"
+msgstr "Rechte Textbox auf der Startseite"
+
+# @ bicbswp
+#: functions.php:193 functions.php:195
+msgid "Footer Column 1"
+msgstr "Footer Spalte 1"
+
+# @ bicbswp
+#: functions.php:206 functions.php:208
+msgid "Footer Column 2"
+msgstr "Footer Spalte 2"
+
+# @ bicbswp
+#: functions.php:219 functions.php:221
+msgid "Footer Column 3"
+msgstr "Footer Spalte 3"
+
+# @ bicbswp
+#: functions.php:308
+msgid "Pingback:"
+msgstr "Pingback:"
+
+# @ bicbswp
+#: functions.php:328
+msgid "Post author"
+msgstr "Autor"
+
+# @ bicbswp
+#: functions.php:336
+msgid "Your comment is awaiting moderation."
+msgstr "Ihr Kommentar wird moderiert."
+
+# @ bicbswp
+#: functions.php:345
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s bei %2$s"
+
+# @ bicbswp
+#: functions.php:353
+msgid "Reply <span>&darr;</span>"
+msgstr "Antworten <span>&darr;</span>"
+
+# @ bicbswp
+#: functions.php:383
+#, php-format
+msgid "Posted on <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a><span class=\"byline\"> <span class=\"sep\"> by </span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+msgstr "gepostet am <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a><span class=\"byline\"> <span class=\"sep\"> von </span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+
+# @ bicbswp
+#: functions.php:383
+#, php-format
+msgid "View all posts by %s"
+msgstr "Alle Beiträge von %s ansehen"
+
+# @ bicbswp
+#: functions.php:506
+#, php-format
+msgid "Page %s"
+msgstr "Seite %s"
+
+# @ bicbswp
+#: 404.php:60
+msgid "This is Embarrassing"
+msgstr "Schade."
+
+# @ bicbswp
+#: 404.php:64
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help."
+msgstr "Die aufgerufene Seite existiert nicht. Vielleicht können Sie über die Suche oder einen der untenstehenden Links den gewünschten Inhalt erreichen."
+
+# @ bicbswp
+#: search.php:51
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Suchergebnisse für: %s"
+
+# @ bicbswp
+#: search.php:59
+msgid "No Results Found"
+msgstr "Keine Ergebnisse gefunden"
+
+# @ bicbswp
+#: search.php:93
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps you should try again with a different search term."
+msgstr "Leider konnte zu dieser Suchanfrage nichts gefunden werden."
+
+# @ bicbswp
+#: content-single.php:13 content.php:13
+#, php-format
+msgid "Permalink to %s"
+msgstr "Permalink zu %s"
+
+# @ bicbswp
+#: content-single.php:16 content.php:16
+msgid "Edit"
+msgstr "Bearbeiten"
+
+# @ bicbswp
+#: footer.php:41
+msgid "Proudly powered by "
+msgstr "Mit stolz präsentiert von "
+
+# @ bicbswp
+#: footer.php:41
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+# @ bicbswp
+#: footer.php:41
+msgid "WordPress"
+msgstr "WordPress"
+
+# @ bicbswp
+#: footer.php:42
+msgid "Theme: BIC Bootstrap WP Theme"
+msgstr "Theme: BIC Bootstrap WP Theme"
+
+# @ default
+#: includes/theme-options.php:49
+msgid "logo"
+msgstr "logo"
+
+# @ default
+#: includes/theme-options.php:66
+msgid "footertext"
+msgstr "footertext"
+
+# @ bicbswp
+#: functions.php:141
+msgid "Post Sidebar"
+msgstr "Beitrags Sidebar"
+
+# @ bicbswp
+#: functions.php:539
+msgid "Archive by category "
+msgstr "Kategorie "
+
+# @ bicbswp
+#: comments.php:34
+msgid "&larr; Older Comments"
+msgstr "&larr; Ältere Kommentare"
+
+# @ bicbswp
+#: comments.php:38
+msgid "Newer Comments &rarr;"
+msgstr "Neuere Kommentare &rarr;"
+
+# @ bicbswp
+#: comments.php:49
+msgid "Comments are closed."
+msgstr "Kommentare sind geschlossen."
+
+# @ bicbswp
+#: functions.php:54
+msgid "Header Menu"
+msgstr "Header Menu"
+
+# @ bicbswp
+#: functions.php:231 functions.php:233
+msgid "Footer Column 4"
+msgstr "Footer Spalte 4"
+
+# @ bicbswp
+#: functions.php:277
+msgid "Post navigation"
+msgstr "Beitragsnavigation"
+
+# @ bicbswp
+#: functions.php:279
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Ältere Posts"
+
+# @ bicbswp
+#: functions.php:282
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Neuere Posts <span class=\"meta-nav\">&rarr;</span>"
+
+# @ default
+#: includes/theme-options.php:53
+msgid "favicon"
+msgstr "favicon"
+
+# @ default
+#: includes/theme-options.php:58
+msgid "front_page"
+msgstr "front_page"
+
+# @ default
+#: includes/theme-options.php:94
+msgid "top-callout"
+msgstr "top-callout"
+
+# @ bicbswp
+#: searchform.php:14 searchform.php:18
+msgid "Search"
+msgstr "Suche"
+
+# @ bicbswp
+#: functions.php:249
+msgid "continue reading"
+msgstr "weiterlesen"
+
+# @ bicbswp
+#: 404.php:74
+msgid "All Pages"
+msgstr "Alle Seiten"
+
+# @ bicbswp
+#: 404.php:79
+msgid "Categories"
+msgstr "Kategorien"
+
+# @ bicbswp
+#: index.php:66
+msgid "Recent Posts"
+msgstr "Neueste Beiträge"
+
+# @ bicbswp
+#: functions.php:598
+msgid "Search results for \""
+msgstr "Suchergebnisse für "
+
+# @ bicbswp
+#: functions.php:600
+msgid "Posts tagged \""
+msgstr "Beiträge mit dem Schlagwort \""
+
+# @ bicbswp
+#: functions.php:604
+msgid "Articles posted by "
+msgstr "Beiträge von "
+
+# @ bicbswp
+#: functions.php:606
+msgid "Error 404"
+msgstr "Fehler 404"
+
+msgid "KGK Online"
+msgstr "Kautschuk Gummi Kunststoffe Online"
+
+msgid "Home"
+msgstr "Startseite"
+
+msgid "Search results for <strong>%1</strong>"
+msgstr "Suchergebnisse zum Begriff <strong>%1</strong>"
+
+msgid "Search results for \"%1\""
+msgstr "Suchergebnisse für \"%1\""
+
+msgid "Content type:"
+msgstr "Texttyp:"
+
+msgid "Any"
+msgstr "Alles"
+
+msgid "News"
+msgstr "News"
+
+msgid "Article"
+msgstr "Fachartikel"
+
+msgid "Product Reviews"
+msgstr "Produktberichte"
+
+msgid "Research Results"
+msgstr "Forschungsergebnisse"
+
+msgid "Date:"
+msgstr "Datum:"
+
+msgid "Last week"
+msgstr "Letzte Woche"
+
+msgid "Last month"
+msgstr "Letzter Monat"
+
+msgid "Last year"
+msgstr "Letztes Jahr"
+
+msgid "Specify date range"
+msgstr "Zeitraum festlegen"
+
+msgid "Result"
+msgstr "Meldung"
+
+msgid "Results"
+msgstr "Meldungen"
+
+msgid "Channel"
+msgstr "Rubrik"
+
+msgid "From:&nbsp;"
+msgstr "Von:&nbsp;"
+
+msgid "To:&nbsp;"
+msgstr "Bis:&nbsp;"
+
+msgid "e.g. 15.2.2015"
+msgstr "z.B. 15.2.2015"
+
+msgid "Sorry, there were no results for your query."
+msgstr "Leider wurden zu dem von Ihnen gesuchten Begriff keine Meldungen gefunden."
+
+msgid "Show German content only"
+msgstr "Nur deutschsprachige Inhalte anzeigen"
+
+msgid "Show both German and English content"
+msgstr "Deutsch- und englischsprachige Inhalte anzeigen"
+
+msgid "more..."
+msgstr "mehr..."
+
+msgid "More <span>»</span>"
+msgstr "Mehr <span>»</span>"
+
+msgid "More from channel %1"
+msgstr "Mehr aus der Rubrik %1"
+
+msgid "More articles"
+msgstr "Mehr Artikel"
+
+msgid "Error trying to log in"
+msgstr "Fehler beim Anmeldeversuch"
+
+msgid "Your subscription number or your postal code are wrong."
+msgstr "Ihre Abonummer oder Ihr Postleitzahl stimmen nicht."
+
+msgid "Remember login"
+msgstr "Login merken"
+
+msgid "Subscription number"
+msgstr "Abonummer"
+
+msgid "Postal code"
+msgstr "Postleitzahl"
+
+msgid "You are now logged in and you can use all features on this website"
+msgstr "Sie sind jetzt eingeloggt und könnnen alle Features der Seite benutzen"
+
+msgid "Start"
+msgstr "Beginn"
+
+msgid "End"
+msgstr "Ende"
+
+msgid "Venue"
+msgstr "Veranstaltungsort"
+
+msgid "Info-Link"
+msgstr "Info-Link"
+
+msgid "Telephone"
+msgstr "Telefon"
+
+msgid "E-Mail"
+msgstr "E-Mail"
+
+msgid "Company"
+msgstr "Unternehmen"
+
+msgid "Topics"
+msgstr "Themen"
+
+msgid "Here"
+msgstr "Hier"
+
+msgid "Edit post"
+msgstr "Beitrag bearbeiten"
+
+msgid "Download article as pdf"
+msgstr "Artikel als PDF herunterladen"
+
+msgid "About the author"
+msgstr "Über den Autor"
+
+msgid "About the authors"
+msgstr "Über die Autoren"
+
+msgid "Recommended article: %1"
+msgstr "Artikelempfehlung: %1"
+
+msgid "The article %22$1%22 on kgk-rubberpoint.de has been recommended to you:"
+msgstr "Ihnen wird der Artikel %22$1%22 auf kgk-rubberpoint.de empfohlen:"
+
+msgid "Recommend via email"
+msgstr "Per E-Mail empfehlen"
+
+msgid "Recommend"
+msgstr "Weiterempfehlen"
+
+msgid "Print"
+msgstr "Drucken"
+
+msgid "Tweet"
+msgstr "Twittern"
+
+msgid "Event calender"
+msgstr "Terminkalender"
+
+msgid "Here you will find relevant dates for exhibitions and events"
+msgstr "Hier finden Sie branchenrelevante Termine zu Messen und Veranstaltungen."
+
+msgid "Stay informed by subscribing to our %1Event-Feed%2"
+msgstr "Bleiben Sie auf dem Laufenden, indem Sie unseren %1Termine-Feed%2 abonnieren"
+
+msgid "Back to the article"
+msgstr "Zurück zum Artikel"
+
+msgid "Company directory"
+msgstr "Firmenverzeichnis"
+
+msgid "Search for company"
+msgstr "Firma suchen"
+
+msgid "Company search"
+msgstr "Firmensuche"
+
+msgid "Found <strong>%2 companies</strong> for the search query <strong>%1</strong>."
+msgstr "Zum Suchbegriff <strong>%1</strong> befinden sich <strong>%2 Firmen</strong> im Firmenverzeichnis."
+
+msgid "Could not find any results for the query <strong>%1</strong>. Please try again."
+msgstr "Zu dem Suchbegriff <strong>%1</strong> wurden keine Ergebnisse gefunden. Bitte suchen Sie erneut."
+
+msgid "Companies A-Z"
+msgstr "Firmen von A-Z"
+
+msgid "There are <strong>%2 companies</strong> in the directory starting with the letter <strong>%1</strong>."
+msgstr "Es befinden sich <strong>%2 Firmen</strong> mit Anfangsbuchstaben <strong>%1</strong> im Firmenverzeichnis."
+
+msgid "Latest entries"
+msgstr "Neueste Einträge"
+
+msgid "Write email"
+msgstr "E-Mail schreiben"
+
+msgid "To the homepage"
+msgstr "Zur Homepage"
+
+msgid "Company description"
+msgstr "Firmenbeschreibung"
+
+msgid "Additional information"
+msgstr "Weitere Informationen"
+
+msgid "Description of products and services"
+msgstr "Produkt- und Dienstleistungsbeschreibung"
+
+msgid "Product groups"
+msgstr "Produktgruppen"
+
+msgid "Documents"
+msgstr "Dokumente"
+
+msgid "Locations"
+msgstr "Niederlassungen"
+
+msgid "Company focus:"
+msgstr "Tätigkeitsschwerpunkt:"
+
+msgid "Contact"
+msgstr "Ansprechpartner"
+
+msgid "Products"
+msgstr "Produkte"
+
+msgid "Events"
+msgstr "Termine"
+
+msgid "More events"
+msgstr "Mehr Termine"
+
+msgid "Picture galleries"
+msgstr "Bildergalerien"
+
+msgid "New companies"
+msgstr "Neue Firmen"
+
+msgid "Here you can see the 100 most recent company entries."
+msgstr "Hier werden Ihnen die 100 neusten Firmeneinträge angezeigt."
+
+msgid "Main features in this issue"
+msgstr "Topthemen dieser Ausgabe"
+
+msgid "Download issue as PDF"
+msgstr "Ausgabe als PDF herunterladen"
+
+msgid "Contents"
+msgstr "Inhalt"
+
+msgid "There are no products for the chosen letter."
+msgstr "Zum ausgewählten Buchstaben wurden keine Themen gefunden."
+
+msgid "Search for Products, Events etc."
+msgstr "Hier nach Produkt, Termin usw. suchen"
+
+msgid "back to list"
+msgstr "zurück zur Übersicht"
+
+msgid "Articles"
+msgstr "Artikel"
+
+msgid "Most popular"
+msgstr "Meistgelesen"
+
+msgid "Recent"
+msgstr "Neu"
+
+msgid "Enter new company"
+msgstr "Jetzt Firma eintragen"
+
+msgid "Recent entries"
+msgstr "Neue Einträge"
+
+msgid "Media"
+msgstr "Medien"
+
+msgid "More videos"
+msgstr "Mehr Videos"
+
+msgid "More picture galleries"
+msgstr "Mehr Bildergalerien"
+
+msgid "The latest news from <strong>KGK</strong>"
+msgstr "Das Neuste der <strong>KGK</strong>"
+
+msgid "sent directly to you"
+msgstr "direkt in Ihren Posteingang"
+
+msgid "Email address"
+msgstr "E-Mail Adresse"
+
+msgid "Subscribe"
+msgstr "Anmelden"
+
+msgid "Market overviews"
+msgstr "Marktübersichten"
+
+msgid "All market overviews"
+msgstr "Alle Marktübersichten"
+
+msgid "Products A-Z"
+msgstr "Produkte von A-Z"
+
+msgid "More specials"
+msgstr "Mehr Specials"
+
+msgid "Research news"
+msgstr "Neues aus der Forschung"
+
+msgid "More research news"
+msgstr "Mehr aus der Forschung"
+
+msgid "Current issue"
+msgstr "Aktuelle Ausgabe"
+
+msgid "Archive"
+msgstr "Archiv"
+
+msgid "Test issue"
+msgstr "Probeheft"
+
+msgid "Subscription"
+msgstr "Abo"
+
+msgid "Subscribers only"
+msgstr "Nur für Abonnenten"
+
+msgid "Only subscribers to the <strong>KGK</strong> magazine can see the full content. Please %login_link_pre%log in%login_link_post% or %abo_link_pre%subscribe%abo_link_post% to our magazine to continue."
+msgstr "Der vollständige Inhalt ist nur für Abonnenten der Fachzeitschrift <strong>KGK</strong> zugänglich. Bitte %login_link_pre%loggen%login_link_post% Sie sich ein oder %abo_link_pre%abonnieren%abo_link_post% Sie unsere Zeitschrift, um fortzufahren."
+
+msgid "You are already a subscriber?"
+msgstr "Sie sind bereits Abonnent?"
+
+msgid "Log in here:"
+msgstr "Loggen Sie sich hier ein:"
+
+msgid "You are not subscribed yet?"
+msgstr "Sie sind noch kein Abonnent?"
+
+msgid "As a subscriber to the <strong>KGK</strong> magazine you have access to all contents of the portal kgk-rubberpoint.de"
+msgstr "Als Abonnent der Fachzeitschrift <strong>KGK</strong> haben Sie Zugriff auf alle Inhalte des Portals kgk-rubberpoint.de"
+
+msgid "Subscribe now"
+msgstr "Jetzt abonnieren"
+
+msgid "Buy single article"
+msgstr "Einzelartikel kaufen"
+
+msgid "You can buy this article individually"
+msgstr "Sie können diesen Artikel auch einzeln kaufen."
+
+msgid "Buy now"
+msgstr "Jetzt kaufen"
+
+msgid "Readers were also interested in"
+msgstr "Leser interessierten sich auch für"
+
+msgid "Related articles"
+msgstr "Verwandte Artikel"
+
+msgid "Companies"
+msgstr "Firmen"
+
+msgid "More companies"
+msgstr "Weitere Firmen"
+
+msgid "Recent Products"
+msgstr "Neue Produkte"
+
+msgid "Magazine archive"
+msgstr "Heftarchiv"
+
+msgid "Main feature"
+msgstr "Titelstory"
+
+msgid "Scientific Publications"
+msgstr "Wissenschaftliche Veröffentlichungen"
+
+msgid "More scientific publications"
+msgstr "Mehr wissenschaftliche Veröffentlichungen"
+
+msgid "Language"
+msgstr "Sprache"
+
+msgid "German"
+msgstr "Deutsch"
+
+msgid "English"
+msgstr "Englisch"
+
+msgid "Search..."
+msgstr "Suche..."
+
+msgid "Picture <b>%1</b> of %2"
+msgstr "Bild <b>%1</b> von %2"
+
+msgid "Written articles"
+msgstr "Verfasste Artikel"
+
+msgid "None found"
+msgstr "Keine gefunden"
+
+msgid "Authors"
+msgstr "Autoren"
+
+msgid "Buy separately"
+msgstr "Einzeln kaufen"
+
+msgid "This article can be bought separately."
+msgstr "Dieser Artikel kann einzeln gekauft werden."
+
+msgid "Buy this article"
+msgstr "Diesen Artikel kaufen"
+
+msgid "Buy article"
+msgstr "Artikel kaufen"
+
+msgid "Download article"
+msgstr "Artikel herunterladen"
+
+msgid "Your article can now be downloaded as pdf. Please click the download button below."
+msgstr "Sie können den Artikel jetzt als pdf herunterladen. Klicken Sie dafür bitte auf den untenstehenden Button."
+
+msgid "This article consists of multiple pdf downloads. Please download any you like with the buttons below."
+msgstr "Dieser Artikel besteht aus mehreren pdf-Dateien. Klicken Sie auf die untenstehenden Buttons, um diese herunterzuladen."
+
+msgid "Warning: Do not leave this page before you downloaded all the files that you wanted. Returning to this page later will not show you the download buttons again."
+msgstr "Warnung: Verlassen Sie diese Seite nicht, bevor Sie alle gewünschten Dateien heruntergeladen haben. Bei einer späteren Rückkehr zu dieser Seite werden die Download-Buttons nicht mehr verfügbar sein."
+
+msgid "Page"
+msgstr "Seite"
+
+msgid "Author"
+msgstr "Autor"
+
+msgid "Subscribe to this channels rss feed"
+msgstr "Abonnieren Sie diese Rubrik als RSS"
+
+msgid "Firstname"
+msgstr "Vorname"
+
+msgid "Lastname"
+msgstr "Nachname"
+
+msgid "Error: Failed to connect to Heidelpay interface."
+msgstr "Fehler: Verbindung mit Heidelpay Schnittstelle konnte nicht hergestellt werden."
