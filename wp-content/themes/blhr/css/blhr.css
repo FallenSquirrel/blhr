@@ -1,4 +1,9 @@
-body { background: url('../img/background.jpg') left top repeat; color: #cccfd1; font-family: "Open Sans",sans-serif; }
+body {
+    background: url('../img/background.jpg') left top repeat;
+    /*background: #252628;*/
+    /*background: #56595e;*/
+    color: #cccfd1; font-family: "Open Sans",sans-serif;
+}
 
 h1, h2, h3 { font-family: "Play",sans-serif; font-weight: 700; }
 a, a:visited { color: #1354d6; }
@@ -39,8 +44,12 @@ h1.page-title { margin: 0; font-size: 30px; }
 .frame-title { float: left; }
 .frame-icons { float: right; }
 .frame-body { padding: 5px; }
+.frame-body:after { clear: both; content: " "; display: table; }
 .frame-footer { background: #000; padding: 2px 5px; border-top: 1px solid #1354d6; color: #abaeb0; font-size: 90%; }
 .frame-footer:after { clear: both; content: " "; display: table; }
+h4.widget-title { font-size: 24px; font-weight: 700; }
+
+#site-main .frame-body img { margin: 10px; }
 
 .article-author { float: left; }
 .article-date { float: right; }
