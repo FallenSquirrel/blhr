@@ -10,10 +10,10 @@ require_once (TEMPLATEPATH . '/inc/lib/CSSCommentPreserver.php');
 require_once (TEMPLATEPATH . '/inc/lib/CSS.php');
 
 // -- widgets
-require_once (MS_WIDGETPATH . '/article.php');
-require_once (MS_WIDGETPATH . '/medien.php');
-require_once (MS_WIDGETPATH . '/newsletter.php');
-require_once (MS_WIDGETPATH . '/termine.php');
+//require_once (MS_WIDGETPATH . '/article.php');
+//require_once (MS_WIDGETPATH . '/medien.php');
+//require_once (MS_WIDGETPATH . '/newsletter.php');
+//require_once (MS_WIDGETPATH . '/termine.php');
 require_once (MS_WIDGETPATH . '/teamspeak.php');
 require_once (MS_WIDGETPATH . '/blhr_logo.php');
 require_once (MS_WIDGETPATH . '/members_online.php');
@@ -99,8 +99,8 @@ foreach ( $customImageSizes as $customImageSize ){
 }
 
 add_action( 'widgets_init', function(){
-    register_widget( 'ht_Medien_Widget' );
-    register_widget( 'ht_Newsletter_Widget' );
+//    register_widget( 'ht_Medien_Widget' );
+//    register_widget( 'ht_Newsletter_Widget' );
     register_widget( 'teamspeak_widget' );
     register_widget( 'blhr_logo_widget' );
     register_widget( 'members_online_widget' );

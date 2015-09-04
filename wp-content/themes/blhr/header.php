@@ -31,6 +31,16 @@
                                 </div>
                                 <nav class="col-md-7 header-right clearfix">
                                     <?php wp_nav_menu( array( 'container' => '', 'container_class' => '', 'theme_location' => 'mainmenu'));  ?>
+                                    <script type="text/javascript">
+                                        jQuery(document).ready(function($) {
+                                            $('.menu-item-has-children').hover(function() {
+                                                var elem = $(this);
+                                                var child = elem.find('ul.sub-menu').first();
+                                                var left = (elem.width() / 2) - (child.width() / 2);
+                                                child.css('left', left);
+                                            });
+                                        });
+                                    </script>
                                 </nav>
                             </div>
                         </div>
