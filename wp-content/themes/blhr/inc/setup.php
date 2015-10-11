@@ -1,6 +1,6 @@
 <?php
 
-define('HT_CSS_VERSION','20150830');
+define('HT_CSS_VERSION','20151011');
 define('HT_JS_VERSION','20150830');
 
 require_once (TEMPLATEPATH . '/inc/lib/JSMin.php');

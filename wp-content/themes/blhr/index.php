@@ -48,9 +48,11 @@
             ?>
         </div>
 
-        <?php if (is_paged()): ?>
-            <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
-        <?php endif; ?>
+        <div class="frame">
+            <footer class="frame-footer">
+                <a href="<?php echo get_category_link(get_category_by_slug('news')); ?>">Mehr News <i class="fa fa-chevron-right"></i></a>
+            </footer>
+        </div>
         <?php get_template_part('inc/main-columns-post'); ?>
     </div>
 </div>

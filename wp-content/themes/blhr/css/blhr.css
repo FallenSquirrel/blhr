@@ -70,3 +70,6 @@ input[type="text"] { background: #000; border: 1px solid #1354d6; }
 input[type="text"]:focus { box-shadow: 0 0 3px #1354d6; }
 input[type="submit"] { background: #000; border: 1px solid #abaeb0; color: #cccfd1; }
 input[type="submit"]:hover { border: 1px solid #1354d6; }
+
+.frame-footer .wp-pagenavi a,
+.frame-footer .wp-pagenavi span { border: 0; }

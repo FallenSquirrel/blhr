@@ -22,7 +22,8 @@ jQuery(document).ready(function(){
 
     jQuery("a[rel='colorbox']").colorbox({
         maxWidth: '1000px', maxHeight: '620px', title: function() { return jQuery(this).next(".wp-caption-text").text(); }
-    }).addClass('img-magnify');
+    //}).addClass('img-magnify');
+    });
 
     jQuery("a.img-magnify").each(function(){
         jQuery(this).append('<img class="magnifier" src="/wp-content/themes/blhr/img/icon-magnifier.png" />');

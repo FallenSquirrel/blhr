@@ -19,7 +19,13 @@
                     <?php get_template_part('inc/content-parts/loop', 'list-item'); ?>
                 <?php endwhile;  ?>
             </div>
-            <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
+            <?php if (is_paged()): ?>
+                <div class="frame">
+                    <footer class="frame-footer">
+                        <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
+                    </footer>
+                </div>
+            <?php endif; ?>
         <?php get_template_part('inc/main-columns-post'); ?>
     </div>
 

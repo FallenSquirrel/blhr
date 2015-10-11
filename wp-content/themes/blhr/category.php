@@ -12,9 +12,11 @@
             ?>
         </div>
 
-        <?php if (is_paged()): ?>
-            <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
-        <?php endif; ?>
+        <div class="frame">
+            <footer class="frame-footer">
+                <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
+            </footer>
+        </div>
         <?php get_template_part('inc/main-columns-post'); ?>
     </div>
 </div><!-- container -->
