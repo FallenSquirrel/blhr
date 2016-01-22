@@ -17,13 +17,14 @@
 
     <section class="post-content">
         <div class="entry-content">
-            <?php echo the_homepage_excerpt();?>
+            <?php the_homepage_excerpt();?>
+            <?php global $post; ?>
             <?php if ($post->post_type == 'page'): ?>
                 <p class="meta"><?php _e('Page', 'blhr-theme'); ?></p>
             <?php elseif ($post->post_type == 'autor'): ?>
                 <p class="meta"><?php _e('Author', 'blhr-theme'); ?></p>
             <?php else: ?>
-                <p class="meta"><?php echo get_the_date(getDateFormatForCurrentLanguage()) ; ?> - <?php echo get_the_category_name(get_the_ID()) ; ?></p>
+                <p class="meta"><?php echo get_the_date() ; ?> - <?php echo get_the_category_name(get_the_ID()) ; ?></p>
             <?php endif ?>
         </div>
     </section>

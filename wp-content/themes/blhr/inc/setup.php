@@ -1,8 +1,5 @@
 <?php
 
-define('HT_CSS_VERSION','20151011');
-define('HT_JS_VERSION','20150830');
-
 require_once (TEMPLATEPATH . '/inc/lib/JSMin.php');
 require_once (TEMPLATEPATH . '/inc/lib/UriRewriter.php');
 require_once (TEMPLATEPATH . '/inc/lib/Compressor.php');
@@ -10,10 +7,6 @@ require_once (TEMPLATEPATH . '/inc/lib/CSSCommentPreserver.php');
 require_once (TEMPLATEPATH . '/inc/lib/CSS.php');
 
 // -- widgets
-//require_once (MS_WIDGETPATH . '/article.php');
-//require_once (MS_WIDGETPATH . '/medien.php');
-//require_once (MS_WIDGETPATH . '/newsletter.php');
-//require_once (MS_WIDGETPATH . '/termine.php');
 require_once (MS_WIDGETPATH . '/teamspeak.php');
 require_once (MS_WIDGETPATH . '/blhr_logo.php');
 require_once (MS_WIDGETPATH . '/members_online.php');
@@ -33,7 +26,6 @@ function head_js_css_scripts()
     wp_enqueue_script('my-jquery-ui', get_stylesheet_directory_uri() . '/js/jquery-ui-1.10.4.js', array('jquery'));
     wp_enqueue_script('my-modernizr', get_stylesheet_directory_uri() . '/js/modernizr-2.6.2-respond-1.1.0.min.js', array('jquery'));
     wp_enqueue_script('my-colorbox', get_stylesheet_directory_uri() . '/js/colorbox.js', array('jquery'));
-    wp_enqueue_script('my-gallery-slider', get_stylesheet_directory_uri() . '/js/gallery-slider.js', array('jquery'));
     wp_enqueue_script('my-jpaginate', get_stylesheet_directory_uri() . '/js/jPaginate.js', array('jquery'));
     wp_enqueue_script('my-blhr', get_stylesheet_directory_uri() . '/js/blhr.js', array('jquery', 'my-gallery-slider', 'my-colorbox', 'my-bootstrap'));
     wp_enqueue_script('my-utils', get_stylesheet_directory_uri() . '/js/Utils.js', array('jquery'));
@@ -52,32 +44,32 @@ add_theme_support('post-formats', array('aside', 'image', 'gallery', 'link', 'qu
 
 // -- contenttypes / taxonomies
 
-function register_contenttype_taxonomy ()
-{
-    // Neue Taxonomie - hierarchisch
-    $labels = array(
-        'name' => _x( 'Contentarten', 'taxonomy general name' ),
-        'singular_name' => _x( 'Contentart', 'taxonomy singular name' ),
-        'search_items' =>  __( 'Contentarten durchsuchen' ),
-        'all_items' => __( 'Alle Contentarten' ),
-        'parent_item' => __( 'Übergeordnete Contentart' ),
-        'parent_item_colon' => __( 'Übergeordnete Contentart:' ),
-        'edit_item' => __( 'Contentart bearbeiten' ),
-        'update_item' => __( 'Contentart aktualisieren' ),
-        'add_new_item' => __( 'Neue Contentart' ),
-        'new_item_name' => __( 'Neue Contentart' ),
-        'menu_name' => __( 'Contentarten' ),
-    );
-
-    register_taxonomy('contenttype',array('post'), array(
-        'hierarchical' => true,
-        'labels' => $labels,
-        'show_ui' => true,
-        'query_var' => true,
-        'rewrite' => array( 'slug' => 'contenttyp' ),
-    ));
-}
-add_action( 'init', 'register_contenttype_taxonomy');
+//function register_contenttype_taxonomy ()
+//{
+//    // Neue Taxonomie - hierarchisch
+//    $labels = array(
+//        'name' => _x( 'Contentarten', 'taxonomy general name' ),
+//        'singular_name' => _x( 'Contentart', 'taxonomy singular name' ),
+//        'search_items' =>  __( 'Contentarten durchsuchen' ),
+//        'all_items' => __( 'Alle Contentarten' ),
+//        'parent_item' => __( 'Übergeordnete Contentart' ),
+//        'parent_item_colon' => __( 'Übergeordnete Contentart:' ),
+//        'edit_item' => __( 'Contentart bearbeiten' ),
+//        'update_item' => __( 'Contentart aktualisieren' ),
+//        'add_new_item' => __( 'Neue Contentart' ),
+//        'new_item_name' => __( 'Neue Contentart' ),
+//        'menu_name' => __( 'Contentarten' ),
+//    );
+//
+//    register_taxonomy('contenttype',array('post'), array(
+//        'hierarchical' => true,
+//        'labels' => $labels,
+//        'show_ui' => true,
+//        'query_var' => true,
+//        'rewrite' => array( 'slug' => 'contenttyp' ),
+//    ));
+//}
+//add_action( 'init', 'register_contenttype_taxonomy');
 
 // -- menus
 register_nav_menus( array(
@@ -99,8 +91,6 @@ foreach ( $customImageSizes as $customImageSize ){
 }
 
 add_action( 'widgets_init', function(){
-//    register_widget( 'ht_Medien_Widget' );
-//    register_widget( 'ht_Newsletter_Widget' );
     register_widget( 'teamspeak_widget' );
     register_widget( 'blhr_logo_widget' );
     register_widget( 'members_online_widget' );

@@ -2,3 +2,4 @@
 /.svn
 /wp-config.php
 /wp-content/uploads/*
+/wp-content/cache/*

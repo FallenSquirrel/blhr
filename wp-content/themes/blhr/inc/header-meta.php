@@ -4,7 +4,7 @@
 elseif (is_category() || is_tag()):
     $catName = single_cat_title('', false);
     $title = $catName . ' - ' . get_option('blogname');
-    $description = 'Meldungen zum Thema ' . $catName;
+    $description = 'Kategorie ' . $catName;
 elseif (is_archive()):
     $archiveName = post_type_archive_title('', false);
     $title = $archiveName.' - ' . get_option('blogname');
@@ -36,7 +36,7 @@ elseif (is_page()):
     $title = $pageTitle . ' - ' . get_option('blogname');
     $description = $pageTitle . ' auf ' . get_option('blogname');
 else:
-    $title = wp_title(' - ', false, right);
+    $title = wp_title(' - ', false, 'right');
     $description = get_option('blogdescription');
 endif; ?>
 

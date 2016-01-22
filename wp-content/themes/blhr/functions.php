@@ -12,17 +12,10 @@
  * @subpackage BIC Bootstrap Wordpress Theme
  */
 
-define( 'MS_ADDONPATH', TEMPLATEPATH . '/inc/addons' );
-define( 'MS_WIDGETPATH', TEMPLATEPATH . '/inc/widgets' );
+define('MS_WIDGETPATH', TEMPLATEPATH . '/inc/widgets' );
 
 require_once (TEMPLATEPATH . '/inc/pv_functions.php');
 require_once (TEMPLATEPATH . '/inc/setup.php');
-
-//require_once (MS_ADDONPATH . '/breadcrumb.php');
-//require_once (MS_ADDONPATH . '/article.php');
-require_once (MS_ADDONPATH . '/termine.php');
-require_once (MS_ADDONPATH . '/megadropdown.php');
-require_once (MS_ADDONPATH . '/menu-walker.php');
 
 
 function autoexpand_rel_wlightbox ($content) {
@@ -33,22 +26,6 @@ function autoexpand_rel_wlightbox ($content) {
     return $content;
 }
 add_filter('the_content', 'autoexpand_rel_wlightbox', 99);
-
-
-/**
- * Remove integrated gallery styles in the content area of standard gallery shortcode.  
- * style in css. 
- */
-add_filter('gallery_style', create_function('$a', 'return "<div class=\'gallery\'>";'));
-
-/* prevent scrolling when using more-tag */
-function remove_more_link_scroll( $link ) {        
-    
-    $link = preg_replace( '|#more-[0-9]+|', '', $link );        return $link;
-    
-} 
-add_filter( 'the_content_more_link', 'remove_more_link_scroll' );
-
 
 /**
  * Display page next/previous navigation links.
@@ -154,23 +131,6 @@ if (!function_exists('bootstrapwp_comment')) :
 
 endif;
 
-
-if (!function_exists('the_article_content')) :
-    function the_article_content($more_link_text = null, $strip_teaser = false)
-    {
-        /*
-        $datetime = get_the_date('c');
-        $dateContent = '<time class="entry-date" datetime="$datetime">';
-        $dateContent .= get_the_date();
-        $dateContent .= ' | </time>';
-        $content = $dateContent;
-        */
-        $content = get_the_content( $more_link_text, $strip_teaser );
-        $content = apply_filters( 'the_content', $content );
-        $content = str_replace( ']]>', ']]&gt;', $content );
-        echo $content;
-    }
-endif;
 
 /**
  * Display template for post meta information.
@@ -477,102 +437,6 @@ function get_the_category_name ($postId)
         return 'News';
     }
 }
-
-remove_all_actions( 'do_feed_rss2' );
-add_action( 'do_feed_rss2', 'ht_nv_feed', 10, 1 );
-
-function ht_nv_feed( $for_comments ) {
-    global $wp_query;
-
-    $rss_template = get_template_directory() . '/feeds/feed-rss2.php';
-    if( file_exists( $rss_template ) ) {
-        load_template( $rss_template );
-    } else {
-        do_feed_rss2( $for_comments ); // Call default function
-    }
-}
-
-add_shortcode('gallery', function($atts) {
-    $galleryPictures = convertGalleryShortCodeToPictures($atts);
-    if(!empty($galleryPictures)) {
-        return getGallerySliderHTMLCode($galleryPictures);
-    }
-    return '';
-});
-
-function convertGalleryShortCodeToPictures($galleryShortCodeAtts)
-{
-    global $wp_query;
-    if(is_array($galleryShortCodeAtts) && array_key_exists('ids', $galleryShortCodeAtts)) {
-        $galleryPictures = preg_split('/,/', $galleryShortCodeAtts['ids']);
-        $i = 0;
-        foreach($galleryPictures as &$picture) {
-            $i++;
-            $picture = wp_get_attachment_image_src(intval(trim($picture)), 'gallery-thumb');
-            $picture['link'] = '/'.$wp_query->post->ID.'/'.$wp_query->post->post_name.'/'.$i.'/?view=galerie';
-        }
-        return $galleryPictures;
-    }
-    return array();
-}
-
-function getGallerySliderHTMLCode($galleryPictures)
-{
-    $html = '<div class="gallerySlider">';
-    $html .= '<div class="previous"><i class="arrow fa fa-chevron-left"></i></div>';
-    $html .= '<div class="next"><i class="arrow fa fa-chevron-right"></i></div>';
-    $html .= '<div class="images"><div class="slider">';
-    foreach ($galleryPictures as $picture):
-        $pictureLink = array_key_exists('link', $picture) ? $picture['link'] : 'javascript:void(0)';
-        $html .= '<div class="tile">';
-        $html .= '<a class="img-magnify" href="'.$pictureLink.'"><img class="thumb" src="'.$picture[0].'" alt="Bild" /></a>';
-        $html .= '</div>';
-    endforeach;
-    $html .= '</div><!--/.slider--></div><!--/.images-->';
-    $html .= '</div><!--/.gallerySlider-->';
-    return $html;
-}
-
-add_filter( 'template_include', 'pageGalleryView', 1 );
-
-function pageGalleryView( $template )
-{
-    if ( isGalleryView() ) {
-        $new_template = locate_template( array( 'single-bildergalerie.php' ) );
-        if ( '' != $new_template ) {
-            return $new_template ;
-        }
-    }
-    return $template;
-}
-
-function isGalleryView()
-{
-    return array_key_exists('view', $_GET) && $_GET['view'] == 'galerie';
-}
-
-function htAdminScriptStyles() {
-    wp_enqueue_style('ht-admin-css', get_stylesheet_directory_uri().'/css/admin.css', array(), '0.1');
-}
-add_action( 'admin_init', 'htAdminScriptStyles' );
-
-// Start session to save if user filtered for german/english articles on index.php or category.php
-function kgk_theme_startSession() {
-    if(!session_id()) {
-        session_start();
-    }
-}
-add_action('init', 'kgk_theme_startSession', 1);
-
-// Disable admin bar for subscribers
-function remove_admin_bar() {
-    if (is_user_logged_in()) {
-        if (current_user_can('subscriber')) {
-            show_admin_bar(false);
-        }
-    }
-}
-add_action('after_setup_theme', 'remove_admin_bar');
 
 function read_last_visit_cookie() {
     global $lastVisit;

@@ -1,6 +1,5 @@
 <?php ht_debug_theme_file_start(__FILE__); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <?php echo get_template_part('snippet','sharebar'); ?>
     <section class="frame">
         <header class="frame-headline">
             <div class="frame-title">

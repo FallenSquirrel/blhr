@@ -13,7 +13,7 @@
         <h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf(esc_attr__('Permalink to %s', 'blhr-theme'), the_title_attribute('echo=0')); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
         <aside class="entry-details">
 
-            <p class="meta"><?php echo bootstrapwp_posted_on(); ?> <?php edit_post_link(__('- Edit', 'blhr-theme')); ?>
+            <p class="meta"><?php bootstrapwp_posted_on(); ?> <?php edit_post_link(__('- Edit', 'blhr-theme')); ?>
                 <br/>
                 <?php bicbswp_cats_tags(); ?>
             </p>
@@ -27,7 +27,7 @@
 
                 <?php if (is_search()) : // Only display excerpts without thumbnails for search.  ?>		
                     <div class="post-excerpt">
-                        <span class="kgk-color-primary"><strong><?php echo get_the_date(getDateFormatForCurrentLanguage()); ?> - </strong></span><?php echo get_the_excerpt(); ?>
+                        <span class="kgk-color-primary"><strong><?php echo get_the_date(); ?> - </strong></span><?php echo get_the_excerpt(); ?>
                     </div><!-- end .entry-summary -->
 
                 <?php else : ?>

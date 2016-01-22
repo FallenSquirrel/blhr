@@ -27,7 +27,7 @@ function minify_css() {
     foreach($wp_styles->queue as $styleHandle) {
         $stylesToOrder[$styleHandle] = $wp_styles->registered[$styleHandle];
     }
-    $reorderedStyles = ht_reorder_scripts($stylesToOrder,$wp_styles->registered);
+    $reorderedStyles = reorder_scripts($stylesToOrder,$wp_styles->registered);
 
     $compressedStylesheet = '';
     foreach ($reorderedStyles as $handle => $style) {
