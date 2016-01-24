@@ -29,7 +29,6 @@ function head_js_css_scripts()
     wp_enqueue_script('my-jpaginate', get_stylesheet_directory_uri() . '/js/jPaginate.js', array('jquery'));
     wp_enqueue_script('my-blhr', get_stylesheet_directory_uri() . '/js/blhr.js', array('jquery', 'my-gallery-slider', 'my-colorbox', 'my-bootstrap'));
     wp_enqueue_script('my-utils', get_stylesheet_directory_uri() . '/js/Utils.js', array('jquery'));
-    wp_enqueue_script('my-oas', get_stylesheet_directory_uri() . '/js/oas.js', array('jquery'));
     wp_enqueue_script('my-modernizr-2', get_stylesheet_directory_uri() . '/js/modernizr.custom.66527.js', array('jquery'));
     wp_enqueue_script('my-iam', 'https://script.ioam.de/iam.js', array('jquery'));
 }
