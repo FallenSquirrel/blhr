@@ -20,7 +20,7 @@ function head_js_css_scripts()
     wp_enqueue_style('my-font-awesome', get_stylesheet_directory_uri() . '/css/font-awesome.min.css');
     wp_enqueue_style('my-colorbox', get_stylesheet_directory_uri() . '/css/colorbox.css');
     wp_enqueue_style('my-gallery-slider', get_stylesheet_directory_uri() . '/css/gallery-slider.css');
-    wp_enqueue_style('my-pv', get_stylesheet_directory_uri() . '/css/blhr.css', array('my-bootstrap', 'my-font-awesome', 'my-colorbox', 'my-gallery-slider'));
+    wp_enqueue_style('my-blhr', get_stylesheet_directory_uri() . '/css/blhr.css?v=1', array('my-bootstrap', 'my-font-awesome', 'my-colorbox', 'my-gallery-slider'));
     wp_enqueue_style('my-print', get_stylesheet_directory_uri() . '/css/print.css', array('my-pv'));
     wp_enqueue_script('my-bootstrap', get_stylesheet_directory_uri() . '/js/bootstrap.min.js', array('jquery'));
     wp_enqueue_script('my-jquery-ui', get_stylesheet_directory_uri() . '/js/jquery-ui-1.10.4.js', array('jquery'));
