@@ -1,7 +1,6 @@
 body {
-    background: url('../img/background.jpg') left top repeat;
-    /*background: #252628;*/
-    /*background: #56595e;*/
+    /*background: url('../img/background.jpg') left top repeat;*/
+    background: #495562;
     color: #cccfd1; font-family: "Open Sans",sans-serif;
 }
 
